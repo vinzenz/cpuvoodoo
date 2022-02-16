@@ -1,9 +1,6 @@
 language: python
-matrix:
-  include:
-    - os: linux
-	  arch: arm64
-      sudo: required
-
+arch: arm64
+sudo: required
+os: linux
 script:
   - cat /proc/cpuinfo
