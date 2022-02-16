@@ -4,7 +4,7 @@ sudo: required
 os: ubuntu
 install:
   - sudo apt-get update -y
-  - sudo apt-get install lscpu -y
+  - sudo apt-get install util-linux -y
 script:
   - sudo lscpu 
   - cat /proc/cpuinfo
