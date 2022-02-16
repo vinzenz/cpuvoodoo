@@ -17,7 +17,7 @@ jobs:
           - arch: s390x
             distro: fedora_latest
     steps:
-      - uses: uraimo/run-on-arch-action@v2
+      - uses: uraimo/run-on-arch-action@v2.1.1
         name: Dump it
         with:
           arch: ${{ matrix.arch }}
