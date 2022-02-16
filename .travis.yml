@@ -1,6 +1,4 @@
 language: python
-env:
-services:
 matrix:
   include:
     - os: linux
