@@ -1,0 +1,11 @@
+language: python
+env:
+services:
+matrix:
+  include:
+    - os: linux
+	  arch: arm64
+      sudo: required
+
+script:
+  - cat /proc/cpuinfo
