@@ -1,6 +1,8 @@
 language: python
 arch: arm64
 sudo: required
-os: linux
+os: ubuntu
+setup:
+  - apt-get install lscpu -y
 script:
   - cat /proc/cpuinfo
