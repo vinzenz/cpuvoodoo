@@ -3,7 +3,8 @@ arch: arm64
 sudo: required
 os: ubuntu
 install:
-  - apt-get install lscpu -y
+  - sudo apt-get update -y
+  - sudo apt-get install lscpu -y
 script:
   - sudo lscpu 
   - cat /proc/cpuinfo
